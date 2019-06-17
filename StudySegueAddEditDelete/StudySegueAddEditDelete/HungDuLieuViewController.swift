@@ -28,7 +28,7 @@ class HungDuLieuViewController: UIViewController, UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         if Int(textField.text!) == nil {
-            let alert = UIAlertController(title: "Thông báo", message: "Thông tin nhập sai, yêu cầu nhập đúng số", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Thông báo", message: "thong tin sai", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         } else {
